@@ -1,15 +1,12 @@
 platform:ios,’8.0’
+use_frameworks!
 target 'ShurimaSwift' do
-    pod 'SDWebImage','~>3.7.3'
-    pod 'AFNetworking', '~> 3.1.0'
-    pod 'SVProgressHUD','~> 1.1.3'
-    pod 'MJExtension', '~> 2.5.6'
-    pod 'MJRefresh'
-    pod 'JSONModel', '~> 1.1.0'
-    pod 'JSONKit-NoWarning', '~> 1.2'
-    pod 'Masonry', '~> 1.0.1'
-    pod 'FMDB'
-    pod 'YYKit'
-
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+   pod 'Kingfisher'
+   pod 'SQLite.swift'
+  pod 'DGElasticPullToRefresh'
+  pod 'YYKit'
+   pod 'SnapKit'
 end
 
