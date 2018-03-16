@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2977105E6D6124743073B3E1 /* libPods-ShurimaSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1F977BE046BF92EFAC0AA8 /* libPods-ShurimaSwift.a */; };
 		67D1D970205B6F5700D47FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D96F205B6F5700D47FB3 /* AppDelegate.swift */; };
 		67D1D972205B6F5700D47FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D971205B6F5700D47FB3 /* ViewController.swift */; };
 		67D1D975205B6F5700D47FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D1D973205B6F5700D47FB3 /* Main.storyboard */; };
@@ -14,6 +15,17 @@
 		67D1D97A205B6F5700D47FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D1D978205B6F5700D47FB3 /* LaunchScreen.storyboard */; };
 		67D1D985205B6F5700D47FB3 /* ShurimaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D984205B6F5700D47FB3 /* ShurimaSwiftTests.swift */; };
 		67D1D990205B6F5700D47FB3 /* ShurimaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */; };
+		A75CCA91205B72D20019B596 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA90205B72D20019B596 /* JavaScriptCore.framework */; };
+		A75CCA93205B72DA0019B596 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA92205B72DA0019B596 /* libz.tbd */; };
+		A75CCA95205B72E10019B596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA94205B72E10019B596 /* Security.framework */; };
+		A75CCA97205B72E70019B596 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA96205B72E70019B596 /* SystemConfiguration.framework */; };
+		A75CCA99205B72EF0019B596 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA98205B72EF0019B596 /* CoreTelephony.framework */; };
+		A75CCA9B205B72F90019B596 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA9A205B72F90019B596 /* CoreGraphics.framework */; };
+		A75CCA9D205B72FE0019B596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA9C205B72FE0019B596 /* UIKit.framework */; };
+		A75CCA9F205B73040019B596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA9E205B73040019B596 /* Foundation.framework */; };
+		A75CCAA1205B73200019B596 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCAA0205B73200019B596 /* libstdc++.tbd */; };
+		A75CCAA3205B73290019B596 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCAA2205B73280019B596 /* libsqlite3.tbd */; };
+		A75CCAA5205B732F0019B596 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCAA4205B732F0019B596 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1F977BE046BF92EFAC0AA8 /* libPods-ShurimaSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShurimaSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1D96C205B6F5700D47FB3 /* ShurimaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShurimaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1D96F205B6F5700D47FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D1D971205B6F5700D47FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,19 @@
 		67D1D98B205B6F5700D47FB3 /* ShurimaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShurimaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShurimaSwiftUITests.swift; sourceTree = "<group>"; };
 		67D1D991205B6F5700D47FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C2A1F129ADC69211E6F1167 /* Pods-ShurimaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShurimaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift.release.xcconfig"; sourceTree = "<group>"; };
+		A75CCA90205B72D20019B596 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A75CCA92205B72DA0019B596 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A75CCA94205B72E10019B596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A75CCA96205B72E70019B596 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A75CCA98205B72EF0019B596 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A75CCA9A205B72F90019B596 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A75CCA9C205B72FE0019B596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A75CCA9E205B73040019B596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A75CCAA0205B73200019B596 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A75CCAA2205B73280019B596 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A75CCAA4205B732F0019B596 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A8700288BF9A2BB6CC1F039D /* Pods-ShurimaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShurimaSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75CCAA5205B732F0019B596 /* ImageIO.framework in Frameworks */,
+				A75CCAA3205B73290019B596 /* libsqlite3.tbd in Frameworks */,
+				A75CCAA1205B73200019B596 /* libstdc++.tbd in Frameworks */,
+				A75CCA93205B72DA0019B596 /* libz.tbd in Frameworks */,
+				A75CCA9F205B73040019B596 /* Foundation.framework in Frameworks */,
+				A75CCA9D205B72FE0019B596 /* UIKit.framework in Frameworks */,
+				A75CCA9B205B72F90019B596 /* CoreGraphics.framework in Frameworks */,
+				A75CCA99205B72EF0019B596 /* CoreTelephony.framework in Frameworks */,
+				A75CCA97205B72E70019B596 /* SystemConfiguration.framework in Frameworks */,
+				A75CCA95205B72E10019B596 /* Security.framework in Frameworks */,
+				A75CCA91205B72D20019B596 /* JavaScriptCore.framework in Frameworks */,
+				2977105E6D6124743073B3E1 /* libPods-ShurimaSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45A367AFDED4487D7B2BE053 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8700288BF9A2BB6CC1F039D /* Pods-ShurimaSwift.debug.xcconfig */,
+				6C2A1F129ADC69211E6F1167 /* Pods-ShurimaSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		67D1D963205B6F5700D47FB3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +128,8 @@
 				67D1D983205B6F5700D47FB3 /* ShurimaSwiftTests */,
 				67D1D98E205B6F5700D47FB3 /* ShurimaSwiftUITests */,
 				67D1D96D205B6F5700D47FB3 /* Products */,
+				A75CCA8F205B72D20019B596 /* Frameworks */,
+				45A367AFDED4487D7B2BE053 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +174,25 @@
 			path = ShurimaSwiftUITests;
 			sourceTree = "<group>";
 		};
+		A75CCA8F205B72D20019B596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A75CCAA4205B732F0019B596 /* ImageIO.framework */,
+				A75CCAA2205B73280019B596 /* libsqlite3.tbd */,
+				A75CCAA0205B73200019B596 /* libstdc++.tbd */,
+				A75CCA9E205B73040019B596 /* Foundation.framework */,
+				A75CCA9C205B72FE0019B596 /* UIKit.framework */,
+				A75CCA9A205B72F90019B596 /* CoreGraphics.framework */,
+				A75CCA98205B72EF0019B596 /* CoreTelephony.framework */,
+				A75CCA96205B72E70019B596 /* SystemConfiguration.framework */,
+				A75CCA94205B72E10019B596 /* Security.framework */,
+				A75CCA92205B72DA0019B596 /* libz.tbd */,
+				A75CCA90205B72D20019B596 /* JavaScriptCore.framework */,
+				2B1F977BE046BF92EFAC0AA8 /* libPods-ShurimaSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67D1D994205B6F5700D47FB3 /* Build configuration list for PBXNativeTarget "ShurimaSwift" */;
 			buildPhases = (
+				40D06457DD46F4F7D613B972 /* [CP] Check Pods Manifest.lock */,
 				67D1D968205B6F5700D47FB3 /* Sources */,
 				67D1D969205B6F5700D47FB3 /* Frameworks */,
 				67D1D96A205B6F5700D47FB3 /* Resources */,
+				C81C35C76BDEF47084DC753B /* [CP] Embed Pods Frameworks */,
+				F71005E1CEEA9E981B227DFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +324,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40D06457DD46F4F7D613B972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShurimaSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C81C35C76BDEF47084DC753B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71005E1CEEA9E981B227DFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67D1D968205B6F5700D47FB3 /* Sources */ = {
@@ -424,10 +550,12 @@
 		};
 		67D1D995205B6F5700D47FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8700288BF9A2BB6CC1F039D /* Pods-ShurimaSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShurimaSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ME.Sugar.ShurimaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,10 +566,12 @@
 		};
 		67D1D996205B6F5700D47FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2A1F129ADC69211E6F1167 /* Pods-ShurimaSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShurimaSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ME.Sugar.ShurimaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
