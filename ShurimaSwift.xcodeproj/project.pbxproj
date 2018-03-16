@@ -17,6 +17,7 @@
 		67D1D985205B6F5700D47FB3 /* ShurimaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D984205B6F5700D47FB3 /* ShurimaSwiftTests.swift */; };
 		67D1D990205B6F5700D47FB3 /* ShurimaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */; };
 		A5A42183612D259DF0C43716 /* Pods_ShurimaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABFBFA13CF27843DDA8A836 /* Pods_ShurimaSwift.framework */; };
+		A7084100205C190000B4D45D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70840FF205C190000B4D45D /* config.swift */; };
 		A75CCA91205B72D20019B596 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA90205B72D20019B596 /* JavaScriptCore.framework */; };
 		A75CCA93205B72DA0019B596 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA92205B72DA0019B596 /* libz.tbd */; };
 		A75CCA95205B72E10019B596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA94205B72E10019B596 /* Security.framework */; };
@@ -65,6 +66,7 @@
 		67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShurimaSwiftUITests.swift; sourceTree = "<group>"; };
 		67D1D991205B6F5700D47FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C2A1F129ADC69211E6F1167 /* Pods-ShurimaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShurimaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift.release.xcconfig"; sourceTree = "<group>"; };
+		A70840FF205C190000B4D45D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		A75CCA90205B72D20019B596 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		A75CCA92205B72DA0019B596 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A75CCA94205B72E10019B596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,11 @@
 		67D1D96E205B6F5700D47FB3 /* ShurimaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A70840F1205C166200B4D45D /* base */,
+				A70840F4205C166300B4D45D /* class */,
+				A70840F2205C166300B4D45D /* config */,
+				A70840F3205C166300B4D45D /* network */,
+				A70840F0205C166200B4D45D /* tool */,
 				677D5FB4205BFD8200CEEA45 /* Category */,
 				67D1D96F205B6F5700D47FB3 /* AppDelegate.swift */,
 				67D1D971205B6F5700D47FB3 /* ViewController.swift */,
@@ -186,6 +193,74 @@
 				67D1D991205B6F5700D47FB3 /* Info.plist */,
 			);
 			path = ShurimaSwiftUITests;
+			sourceTree = "<group>";
+		};
+		A70840F0205C166200B4D45D /* tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		A70840F1205C166200B4D45D /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		A70840F2205C166300B4D45D /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A70840FF205C190000B4D45D /* config.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A70840F3205C166300B4D45D /* network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A70840F4205C166300B4D45D /* class */ = {
+			isa = PBXGroup;
+			children = (
+				A70840FB205C170C00B4D45D /* perfectData */,
+				A70840F9205C16A000B4D45D /* login */,
+				A70840F7205C168800B4D45D /* home */,
+				A70840F8205C168800B4D45D /* mine */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		A70840F7205C168800B4D45D /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		A70840F8205C168800B4D45D /* mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		A70840F9205C16A000B4D45D /* login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		A70840FB205C170C00B4D45D /* perfectData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = perfectData;
 			sourceTree = "<group>";
 		};
 		A75CCA8F205B72D20019B596 /* Frameworks */ = {
@@ -417,6 +492,7 @@
 				677D5FB8205BFE2100CEEA45 /* UIKitAdd.swift in Sources */,
 				677D5FB7205BFE2100CEEA45 /* FoundationAdd.swift in Sources */,
 				67D1D972205B6F5700D47FB3 /* ViewController.swift in Sources */,
+				A7084100205C190000B4D45D /* config.swift in Sources */,
 				67D1D970205B6F5700D47FB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
