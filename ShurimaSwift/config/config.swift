@@ -26,9 +26,6 @@ let kIOS10 = Double(UIDevice().systemVersion) == 10.0 ? 1 : 0
 let kIOS11 = Double(UIDevice().systemVersion) == 11.0 ? 1 : 0
 
 //rgb 颜色
-
-
-
 func RGB(r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor{
     
     return UIColor(red: r/255.0, green:(g)/255.0, blue: (b)/255.0, alpha:1.0)

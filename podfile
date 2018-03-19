@@ -8,5 +8,6 @@ target 'ShurimaSwift' do
   pod 'DGElasticPullToRefresh'
   pod 'YYKit'
    pod 'SnapKit'
+  pod 'Moya'
 end
 
