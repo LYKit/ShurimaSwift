@@ -12,19 +12,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    var imageViews = Array<UIImageView>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
      
         print("init project")
-        
-        
-        
+                
     }
 
-    
     
     
     
