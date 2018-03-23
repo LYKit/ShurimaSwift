@@ -7,12 +7,10 @@
 //
 
 import UIKit
-
-
+import Alamofire
+import Moya
 
 class ViewController: UIViewController {
-
-    var imageViews = Array<UIImageView>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +19,6 @@ class ViewController: UIViewController {
         print("init project")
                 
     }
-
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
