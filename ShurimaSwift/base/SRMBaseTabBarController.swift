@@ -24,6 +24,11 @@ class SRMBaseTabBarController: UITabBarController {
                    title: "消息",
                    normalImageName: "mine_tabar_normal",
                    selectImageName: "mine_tabar_select")
+        
+        let demoVC = SRMDemoViewController()
+        addChildVC(viewCtrl: demoVC, title: "demo",
+                   normalImageName: "mine_tabar_niu",
+                   selectImageName:"mine_tabar_B")
     }
     
     /// 设置tab页

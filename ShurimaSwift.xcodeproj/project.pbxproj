@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		676A0C8E20688237004C504B /* SRMIMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C8D20688237004C504B /* SRMIMsgController.swift */; };
+		676A0C912068E0CF004C504B /* SRMDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C902068E0CF004C504B /* SRMDemoViewController.swift */; };
+		676A0C932068E763004C504B /* SRMJSTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C922068E763004C504B /* SRMJSTestController.swift */; };
 		677D5FB7205BFE2100CEEA45 /* FoundationAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D5FB5205BFE2000CEEA45 /* FoundationAdd.swift */; };
 		677D5FB8205BFE2100CEEA45 /* UIKitAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D5FB6205BFE2000CEEA45 /* UIKitAdd.swift */; };
 		679F13D02064EF4500EC6713 /* SRMBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679F13CF2064EF4500EC6713 /* SRMBaseTabBarController.swift */; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		2ABFBFA13CF27843DDA8A836 /* Pods_ShurimaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShurimaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		676A0C8D20688237004C504B /* SRMIMsgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRMIMsgController.swift; sourceTree = "<group>"; };
+		676A0C902068E0CF004C504B /* SRMDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMDemoViewController.swift; sourceTree = "<group>"; };
+		676A0C922068E763004C504B /* SRMJSTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMJSTestController.swift; sourceTree = "<group>"; };
 		677D5FB5205BFE2000CEEA45 /* FoundationAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationAdd.swift; sourceTree = "<group>"; };
 		677D5FB6205BFE2000CEEA45 /* UIKitAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAdd.swift; sourceTree = "<group>"; };
 		679F13CF2064EF4500EC6713 /* SRMBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		676A0C8F2068E097004C504B /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				676A0C902068E0CF004C504B /* SRMDemoViewController.swift */,
+				676A0C922068E763004C504B /* SRMJSTestController.swift */,
+			);
+			path = demos;
+			sourceTree = "<group>";
+		};
 		677D5FB4205BFD8200CEEA45 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		679F13CC2064EEEF00EC6713 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				676A0C8F2068E097004C504B /* demos */,
 				679F13D32064F0FF00EC6713 /* imsg */,
 				679F13D22064F0F900EC6713 /* profile */,
 				679F13D12064F0E900EC6713 /* home */,
@@ -521,6 +535,8 @@
 				A7084100205C190000B4D45D /* config.swift in Sources */,
 				679F13D62064F13800EC6713 /* SRMBaseViewController.swift in Sources */,
 				67D1D970205B6F5700D47FB3 /* AppDelegate.swift in Sources */,
+				676A0C912068E0CF004C504B /* SRMDemoViewController.swift in Sources */,
+				676A0C932068E763004C504B /* SRMJSTestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
