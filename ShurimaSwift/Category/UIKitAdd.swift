@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    var top : CGFloat {
+    var top_y : CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -20,7 +20,7 @@ extension UIView {
             self.frame = frames
         }
     }
-    var left : CGFloat {
+    var left_x : CGFloat {
         get {
             return self.frame.origin.x
         }
