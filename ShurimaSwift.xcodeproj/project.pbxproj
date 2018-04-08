@@ -10,6 +10,7 @@
 		676A0C8E20688237004C504B /* SRMIMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C8D20688237004C504B /* SRMIMsgController.swift */; };
 		676A0C912068E0CF004C504B /* SRMDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C902068E0CF004C504B /* SRMDemoViewController.swift */; };
 		676A0C932068E763004C504B /* SRMJSTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676A0C922068E763004C504B /* SRMJSTestController.swift */; };
+		676A0C952068F63E004C504B /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 676A0C942068F63D004C504B /* test.html */; };
 		677D5FB7205BFE2100CEEA45 /* FoundationAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D5FB5205BFE2000CEEA45 /* FoundationAdd.swift */; };
 		677D5FB8205BFE2100CEEA45 /* UIKitAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D5FB6205BFE2000CEEA45 /* UIKitAdd.swift */; };
 		679F13D02064EF4500EC6713 /* SRMBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679F13CF2064EF4500EC6713 /* SRMBaseTabBarController.swift */; };
@@ -23,6 +24,8 @@
 		67D1D97A205B6F5700D47FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D1D978205B6F5700D47FB3 /* LaunchScreen.storyboard */; };
 		67D1D985205B6F5700D47FB3 /* ShurimaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D984205B6F5700D47FB3 /* ShurimaSwiftTests.swift */; };
 		67D1D990205B6F5700D47FB3 /* ShurimaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */; };
+		67F04E86206FAB5500672673 /* SRMBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F04E85206FAB5500672673 /* SRMBaseCell.swift */; };
+		67F04E88206FABA100672673 /* SRMDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F04E87206FABA100672673 /* SRMDemoCell.swift */; };
 		A5A42183612D259DF0C43716 /* Pods_ShurimaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABFBFA13CF27843DDA8A836 /* Pods_ShurimaSwift.framework */; };
 		A7084100205C190000B4D45D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70840FF205C190000B4D45D /* config.swift */; };
 		A75CCA91205B72D20019B596 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75CCA90205B72D20019B596 /* JavaScriptCore.framework */; };
@@ -60,6 +63,7 @@
 		676A0C8D20688237004C504B /* SRMIMsgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRMIMsgController.swift; sourceTree = "<group>"; };
 		676A0C902068E0CF004C504B /* SRMDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMDemoViewController.swift; sourceTree = "<group>"; };
 		676A0C922068E763004C504B /* SRMJSTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMJSTestController.swift; sourceTree = "<group>"; };
+		676A0C942068F63D004C504B /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		677D5FB5205BFE2000CEEA45 /* FoundationAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationAdd.swift; sourceTree = "<group>"; };
 		677D5FB6205BFE2000CEEA45 /* UIKitAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAdd.swift; sourceTree = "<group>"; };
 		679F13CF2064EF4500EC6713 /* SRMBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		67D1D98B205B6F5700D47FB3 /* ShurimaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShurimaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1D98F205B6F5700D47FB3 /* ShurimaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShurimaSwiftUITests.swift; sourceTree = "<group>"; };
 		67D1D991205B6F5700D47FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F04E85206FAB5500672673 /* SRMBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMBaseCell.swift; sourceTree = "<group>"; };
+		67F04E87206FABA100672673 /* SRMDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMDemoCell.swift; sourceTree = "<group>"; };
 		6C2A1F129ADC69211E6F1167 /* Pods-ShurimaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShurimaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift.release.xcconfig"; sourceTree = "<group>"; };
 		A70840FF205C190000B4D45D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		A75CCA90205B72D20019B596 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -153,7 +159,9 @@
 		676A0C8F2068E097004C504B /* demos */ = {
 			isa = PBXGroup;
 			children = (
+				676A0C942068F63D004C504B /* test.html */,
 				676A0C902068E0CF004C504B /* SRMDemoViewController.swift */,
+				67F04E87206FABA100672673 /* SRMDemoCell.swift */,
 				676A0C922068E763004C504B /* SRMJSTestController.swift */,
 			);
 			path = demos;
@@ -174,6 +182,7 @@
 				679F13CF2064EF4500EC6713 /* SRMBaseTabBarController.swift */,
 				679F13DB2064F88C00EC6713 /* SRMNavigationController.swift */,
 				679F13D52064F13800EC6713 /* SRMBaseViewController.swift */,
+				67F04E85206FAB5500672673 /* SRMBaseCell.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -424,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676A0C952068F63E004C504B /* test.html in Resources */,
 				67D1D97A205B6F5700D47FB3 /* LaunchScreen.storyboard in Resources */,
 				67D1D977205B6F5700D47FB3 /* Assets.xcassets in Resources */,
 				67D1D975205B6F5700D47FB3 /* Main.storyboard in Resources */,
@@ -530,9 +540,11 @@
 				677D5FB7205BFE2100CEEA45 /* FoundationAdd.swift in Sources */,
 				676A0C8E20688237004C504B /* SRMIMsgController.swift in Sources */,
 				679F13DC2064F88C00EC6713 /* SRMNavigationController.swift in Sources */,
+				67F04E86206FAB5500672673 /* SRMBaseCell.swift in Sources */,
 				67D1D972205B6F5700D47FB3 /* ViewController.swift in Sources */,
 				679F13D02064EF4500EC6713 /* SRMBaseTabBarController.swift in Sources */,
 				A7084100205C190000B4D45D /* config.swift in Sources */,
+				67F04E88206FABA100672673 /* SRMDemoCell.swift in Sources */,
 				679F13D62064F13800EC6713 /* SRMBaseViewController.swift in Sources */,
 				67D1D970205B6F5700D47FB3 /* AppDelegate.swift in Sources */,
 				676A0C912068E0CF004C504B /* SRMDemoViewController.swift in Sources */,

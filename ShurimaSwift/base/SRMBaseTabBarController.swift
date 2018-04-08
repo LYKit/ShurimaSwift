@@ -26,7 +26,7 @@ class SRMBaseTabBarController: UITabBarController {
                    selectImageName: "mine_tabar_select")
         
         let demoVC = SRMDemoViewController()
-        addChildVC(viewCtrl: demoVC, title: "demo",
+        addChildVC(viewCtrl: demoVC, title: "Demo",
                    normalImageName: "mine_tabar_niu",
                    selectImageName:"mine_tabar_B")
     }
@@ -36,7 +36,7 @@ class SRMBaseTabBarController: UITabBarController {
     /// - Parameters:
     ///   - viewCtrl: 各个子控制器
     ///   - title: 控制器标题
-    ///   - normalImageName: 普通时图片名称
+    ///   - normalImageName: 未选中时图片名称
     ///   - selectImageName: 选中时图片名称
     private func addChildVC(viewCtrl: UIViewController,
                                title: String,
