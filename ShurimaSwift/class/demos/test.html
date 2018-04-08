@@ -6,37 +6,34 @@
 </head>
 <body>
     <div style="margin-top: 20px">
-        <input type="button" value="callPhone" onclick="callPhone()">
+        <!--无参数函数-->
+        <input type="button" value="无参数调用" onclick="noParameter()">
     </div>
     
     <div style="margin-top: 20px">
-        <input type="button" value="log" onclick="log('测试')">
-    </div>
-    
-    <div style="margin-top: 20px">
-        <input type="button" value="有参数调用" onclick="test()">
+        <!--参数函数-->
+        <input type="button" value="有参数调用" onclick="hasParameter('参数')">
     </div>
     
     <div style="margin-top: 20px">
         <input type="button" value="模型注入调用" onclick="jsFunc()">
     </div>
-
-    
     
 </body>
 
 <script>
-    // 声明一个名为callPhone的js函数，其会发出一个链接为nativejs://callPhone的请求
-    function callPhone() {
-        window.location.href = 'nativejs://callPhone';
+    // 声明一个名为callPhone的js函数，其会发出一个链接为nativejs://noParameter的请求
+    function noParameter() {
+        window.location.href = 'nativejs://noParameter';
+        noParameterMethod()
     }
 
-    function test() {
-        testfoo("param2", "param1")
+    function hasParameter() {
+        hasParameterMethod("param", "param1")
     }
 
     function jsFunc() {
-        alert('Objective-C call js to show alert');
+
     }
 
 </script>

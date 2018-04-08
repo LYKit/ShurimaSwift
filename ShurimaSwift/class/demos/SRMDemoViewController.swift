@@ -2,7 +2,7 @@
 //  SRMDemoViewController.swift
 //  ShurimaSwift
 //
-//  Created by jinghua on 2018/3/26.
+//  Created by jinghua on 2018/4/8.
 //  Copyright © 2018年 ME.Sugar. All rights reserved.
 //
 
@@ -30,10 +30,10 @@ class SRMDemoViewController: SRMBaseViewController {
     }
     
     private func makeDataSource() {
-        let jstest = "HTML与JS的交互"
-        let jstestVC = SRMJSTestController()
+        let jstest = "UIWebView与JavaScript交互"
+        let jstestVC = SRMWebViewAndJsController()
         let jsModel = ClassStruct(className: jstest, classEntity: jstestVC)
-    
+        
         models.append(jsModel)
     }
     
@@ -45,7 +45,7 @@ class SRMDemoViewController: SRMBaseViewController {
         tableView.register(SRMDemoCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -58,8 +58,7 @@ extension SRMDemoViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    
+        let cell: SRMDemoCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SRMDemoCell
         if models.count > 0 {
             let classStruct = models[indexPath.row]
             cell.textLabel?.text = classStruct.className
@@ -68,7 +67,7 @@ extension SRMDemoViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         if models.count > 0 {
             let classStruct = models[indexPath.row]
             let vc = classStruct.classEntity
@@ -77,3 +76,4 @@ extension SRMDemoViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
 }
+

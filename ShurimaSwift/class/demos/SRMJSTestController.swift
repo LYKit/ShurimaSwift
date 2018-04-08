@@ -7,15 +7,12 @@
 //
 
 import UIKit
-import JavaScriptCore
 import WebKit
+import JavaScriptCore
 
-class SRMJSTestController: SRMBaseViewController {
-    
-    
+class SRMWebViewAndJsCtrl: SRMBaseViewController {
 
     let webView = UIWebView()
-    let wkWebView = WKWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +32,6 @@ class SRMJSTestController: SRMBaseViewController {
         webView.loadRequest(request)
     }
     
-    private func _initWKWebView() {
-        wkWebView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
-        
-    }
-    
     func foo1() {
         print("调用了foo1")
     }
@@ -50,7 +42,7 @@ class SRMJSTestController: SRMBaseViewController {
     }
 }
 
-//js 调用 oc 函数
+//js 调用 本地函数
 /*
  1. 拦截约定好的request (无法获取参数)
  let url = request.url
@@ -80,7 +72,7 @@ class SRMJSTestController: SRMBaseViewController {
  context.setObject(unsafeBitCast(keyedSubScript, to: AnyObject.self), forKeyedSubscript: "testfoo" as NSCopying & NSObjectProtocol)
 
  */
-extension SRMJSTestController : UIWebViewDelegate {
+extension SRMWebViewAndJsCtrl : UIWebViewDelegate {
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
@@ -150,8 +142,7 @@ extension SRMJSTestController : UIWebViewDelegate {
     }
 }
 
-
-extension SRMJSTestController :  WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
+extension SRMWebViewAndJsCtrl :  WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
