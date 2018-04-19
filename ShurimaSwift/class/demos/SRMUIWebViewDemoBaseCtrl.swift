@@ -16,7 +16,7 @@ class SRMUIWebViewDemoBaseCtrl: SRMBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isHidden = true
+//        self.tabBarController?.tabBar.isHidden = true
         
         _initWebView()
     }

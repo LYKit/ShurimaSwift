@@ -15,7 +15,19 @@ class SRMWebViewAndJsController: SRMUIWebViewDemoBaseCtrl {
         super.viewDidLoad()
         
         setupWebView()
+        
+        let nums = [3,3]
+        
+        print(twoSum(nums, 6));
+        
+        
     }
+    
+//    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+//        
+//        
+//    }
+
     
     func setupWebView() {
         webView?.delegate = self
