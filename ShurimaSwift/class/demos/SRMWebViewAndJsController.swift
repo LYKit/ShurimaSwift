@@ -18,14 +18,16 @@ class SRMWebViewAndJsController: SRMUIWebViewDemoBaseCtrl {
         
         let nums = [3,3]
         
-        print(twoSum(nums, 6));
+//        print(twoSum(nums, 6));
         
         
     }
     
 //    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-//        
-//        
+//
+//
+//        return 0
+//
 //    }
 
     

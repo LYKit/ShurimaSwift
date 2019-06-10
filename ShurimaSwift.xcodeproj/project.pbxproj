@@ -198,24 +198,9 @@
 			children = (
 				676A0C8F2068E097004C504B /* demos */,
 				679F13D32064F0FF00EC6713 /* imsg */,
-				679F13D22064F0F900EC6713 /* profile */,
 				679F13D12064F0E900EC6713 /* home */,
 			);
 			path = class;
-			sourceTree = "<group>";
-		};
-		679F13CD2064EF0D00EC6713 /* network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = network;
-			sourceTree = "<group>";
-		};
-		679F13CE2064EF2600EC6713 /* tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tool;
 			sourceTree = "<group>";
 		};
 		679F13D12064F0E900EC6713 /* home */ = {
@@ -224,13 +209,6 @@
 				679F13D92064F75E00EC6713 /* SRMHomeController.swift */,
 			);
 			path = home;
-			sourceTree = "<group>";
-		};
-		679F13D22064F0F900EC6713 /* profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = profile;
 			sourceTree = "<group>";
 		};
 		679F13D32064F0FF00EC6713 /* imsg */ = {
@@ -267,8 +245,6 @@
 		67D1D96E205B6F5700D47FB3 /* ShurimaSwift */ = {
 			isa = PBXGroup;
 			children = (
-				679F13CE2064EF2600EC6713 /* tool */,
-				679F13CD2064EF0D00EC6713 /* network */,
 				679F13CC2064EEEF00EC6713 /* class */,
 				679F13CB2064EEDC00EC6713 /* base */,
 				A70840F2205C166300B4D45D /* config */,
@@ -340,7 +316,6 @@
 				67D1D969205B6F5700D47FB3 /* Frameworks */,
 				67D1D96A205B6F5700D47FB3 /* Resources */,
 				C81C35C76BDEF47084DC753B /* [CP] Embed Pods Frameworks */,
-				F71005E1CEEA9E981B227DFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -514,25 +489,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F71005E1CEEA9E981B227DFA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShurimaSwift/Pods-ShurimaSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -726,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3WG4X3PL2V;
 				INFOPLIST_FILE = ShurimaSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -745,7 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3WG4X3PL2V;
 				INFOPLIST_FILE = ShurimaSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

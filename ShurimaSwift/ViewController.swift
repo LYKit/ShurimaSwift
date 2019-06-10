@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import Moya
 
 class ViewController: UIViewController {
     
