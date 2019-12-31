@@ -8,6 +8,7 @@
 
 import UIKit
 import YYKit
+import SnapKit
 
 class SRMHomeController: SRMBaseViewController {
 
@@ -16,8 +17,21 @@ class SRMHomeController: SRMBaseViewController {
         title = "首页"
         view.backgroundColor = .yellow
         
-        
-
+        let button = UIButton(type: .system)
+        button.backgroundColor = UIColor.red
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside);
+        button.snp.makeConstraints { (make) in
+            make.size.equalTo(100)
+            make.center.equalTo(view)
+        }
+    }
+    
+    @objc func buttonClick() {
+        let vc = SRMTestViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+        vc.hidesBottomBarWhenPushed = false
     }
 
     override func didReceiveMemoryWarning() {
