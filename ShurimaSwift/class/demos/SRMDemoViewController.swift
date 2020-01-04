@@ -68,12 +68,16 @@ extension SRMDemoViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if models.count > 0 {
-            let classStruct = models[indexPath.row]
-            let vc = classStruct.classEntity
-            vc.title = classStruct.className
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let vc = SRMPoemDetailController()
+        self.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.hidesBottomBarWhenPushed = false
+//        if models.count > 0 {
+//            let classStruct = models[indexPath.row]
+//            let vc = classStruct.classEntity
+//            vc.title = classStruct.className
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
     }
 }
 

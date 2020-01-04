@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D260B1923B9EFCB00B9E1CC /* SRMPoemDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D260B1823B9EFCB00B9E1CC /* SRMPoemDetailController.swift */; };
+		0DD8B54B2372B596004DACEC /* SRMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8B54A2372B596004DACEC /* SRMTestViewController.swift */; };
 		6763EB16207A3B8100F39E5F /* SRMJSTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB15207A3B8100F39E5F /* SRMJSTestController.swift */; };
 		6763EB1B207A44D200F39E5F /* SRMDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB1A207A44D200F39E5F /* SRMDemoViewController.swift */; };
 		6763EB1F207A457400F39E5F /* SRMUIWebViewDemoBaseCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6763EB1E207A457400F39E5F /* SRMUIWebViewDemoBaseCtrl.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D260B1823B9EFCB00B9E1CC /* SRMPoemDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMPoemDetailController.swift; sourceTree = "<group>"; };
+		0DD8B54A2372B596004DACEC /* SRMTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMTestViewController.swift; sourceTree = "<group>"; };
 		2ABFBFA13CF27843DDA8A836 /* Pods_ShurimaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShurimaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6763EB15207A3B8100F39E5F /* SRMJSTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRMJSTestController.swift; sourceTree = "<group>"; };
 		6763EB1A207A44D200F39E5F /* SRMDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRMDemoViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				676A0C942068F63D004C504B /* test.html */,
 				67F04E87206FABA100672673 /* SRMDemoCell.swift */,
 				6763EB1A207A44D200F39E5F /* SRMDemoViewController.swift */,
+				0D260B1823B9EFCB00B9E1CC /* SRMPoemDetailController.swift */,
 				6763EB1E207A457400F39E5F /* SRMUIWebViewDemoBaseCtrl.swift */,
 				6763EB20207A488900F39E5F /* SRMWebViewAndJsController.swift */,
 				6763EB15207A3B8100F39E5F /* SRMJSTestController.swift */,
@@ -207,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				679F13D92064F75E00EC6713 /* SRMHomeController.swift */,
+				0DD8B54A2372B596004DACEC /* SRMTestViewController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD8B54B2372B596004DACEC /* SRMTestViewController.swift in Sources */,
 				677D5FB8205BFE2100CEEA45 /* UIKitAdd.swift in Sources */,
 				679F13DA2064F75E00EC6713 /* SRMHomeController.swift in Sources */,
 				677D5FB7205BFE2100CEEA45 /* FoundationAdd.swift in Sources */,
@@ -505,6 +512,7 @@
 				676A0C8E20688237004C504B /* SRMIMsgController.swift in Sources */,
 				6763EB1B207A44D200F39E5F /* SRMDemoViewController.swift in Sources */,
 				6763EB16207A3B8100F39E5F /* SRMJSTestController.swift in Sources */,
+				0D260B1923B9EFCB00B9E1CC /* SRMPoemDetailController.swift in Sources */,
 				679F13DC2064F88C00EC6713 /* SRMNavigationController.swift in Sources */,
 				67F04E86206FAB5500672673 /* SRMBaseCell.swift in Sources */,
 				6763EB21207A488900F39E5F /* SRMWebViewAndJsController.swift in Sources */,
