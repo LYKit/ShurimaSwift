@@ -9,6 +9,8 @@
 import UIKit
 import YYKit
 import SnapKit
+import Moya
+import Alamofire
 
 class SRMHomeController: SRMBaseViewController {
 
@@ -16,6 +18,16 @@ class SRMHomeController: SRMBaseViewController {
         super.viewDidLoad()
         title = "首页"
         view.backgroundColor = .yellow
+        
+        let redView = UIView()
+        view.addSubview(redView)
+        redView.snp.makeConstraints { (make) in
+            make.top.equalTo(0);
+            make.left.equalTo(0);
+            make.width.equalTo(SCREEN_WIDTH);
+            make.height.equalTo(400);
+        }
+        redView.backgroundColor = UIColor.red
         
         let button = UIButton(type: .system)
         button.backgroundColor = UIColor.red
