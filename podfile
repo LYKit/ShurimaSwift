@@ -1,13 +1,18 @@
 platform:ios,’8.0’
 use_frameworks!
 target 'ShurimaSwift' do
-    pod 'Alamofire'
-    pod 'SwiftyJSON'
-   pod 'Kingfisher'
-   pod 'SQLite.swift'
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'SQLite.swift'
   pod 'DGElasticPullToRefresh'
   pod 'YYKit'
-   pod 'SnapKit'
+  pod 'SnapKit'
   pod 'Moya'
+  pod 'ObjectMapper'
+  pod 'Moya'
+  pod 'RxSwift'
+  pod 'Moya/RxSwift'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'AlamofireObjectMapper'
 end
 
