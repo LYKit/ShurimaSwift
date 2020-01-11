@@ -3,11 +3,15 @@ use_frameworks!
 target 'ShurimaSwift' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
-   pod 'Kingfisher'
-   pod 'SQLite.swift'
-  pod 'DGElasticPullToRefresh'
-  pod 'YYKit'
-   pod 'SnapKit'
-  pod 'Moya'
+    pod 'Kingfisher'
+    pod 'SQLite.swift'
+    pod 'DGElasticPullToRefresh'
+    pod 'YYKit'
+    pod 'SnapKit'
+    pod 'Moya'
+    pod 'Moya/RxSwift'
+    pod 'Moya'
+    pod 'RxSwift'
+    pod 'ObjectMapper'
 end
 

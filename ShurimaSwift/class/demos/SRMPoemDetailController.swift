@@ -8,6 +8,7 @@
 
 import UIKit
 import Moya
+import ObjectMapper
 
 
 enum MoyaApi {
@@ -30,7 +31,7 @@ class SRMPoemDetailController: UIViewController {
         provider.request(MoyaApi.detail) { result in
             if case let .success(response) = result {
                 let mapJson = try? response.mapJSON()
-                print(mapJson)
+                print(mapJson.)
             }
         }
     }
