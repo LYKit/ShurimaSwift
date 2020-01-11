@@ -1,20 +1,6 @@
 platform:ios,’8.0’
 use_frameworks!
 target 'ShurimaSwift' do
-<<<<<<< HEAD
-    pod 'Alamofire'
-    pod 'SwiftyJSON'
-    pod 'Kingfisher'
-    pod 'SQLite.swift'
-    pod 'DGElasticPullToRefresh'
-    pod 'YYKit'
-    pod 'SnapKit'
-    pod 'Moya'
-    pod 'Moya/RxSwift'
-    pod 'Moya'
-    pod 'RxSwift'
-    pod 'ObjectMapper'
-=======
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'SQLite.swift'
@@ -28,6 +14,5 @@ target 'ShurimaSwift' do
   pod 'Moya/RxSwift'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'AlamofireObjectMapper'
->>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 end
 
