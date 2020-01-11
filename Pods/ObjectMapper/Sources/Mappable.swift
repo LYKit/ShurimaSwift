@@ -49,7 +49,11 @@ public protocol StaticMappable: BaseMappable {
 public extension BaseMappable {
 	
 	/// Initializes object from a JSON String
+<<<<<<< HEAD
 	public init?(JSONString: String, context: MapContext? = nil) {
+=======
+	init?(JSONString: String, context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		if let obj: Self = Mapper(context: context).map(JSONString: JSONString) {
 			self = obj
 		} else {
@@ -58,7 +62,11 @@ public extension BaseMappable {
 	}
 	
 	/// Initializes object from a JSON Dictionary
+<<<<<<< HEAD
 	public init?(JSON: [String: Any], context: MapContext? = nil) {
+=======
+	init?(JSON: [String: Any], context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		if let obj: Self = Mapper(context: context).map(JSON: JSON) {
 			self = obj
 		} else {
@@ -67,12 +75,20 @@ public extension BaseMappable {
 	}
 	
 	/// Returns the JSON Dictionary for the object
+<<<<<<< HEAD
 	public func toJSON() -> [String: Any] {
+=======
+	func toJSON() -> [String: Any] {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSON(self)
 	}
 	
 	/// Returns the JSON String for the object
+<<<<<<< HEAD
 	public func toJSONString(prettyPrint: Bool = false) -> String? {
+=======
+	func toJSONString(prettyPrint: Bool = false) -> String? {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSONString(self, prettyPrint: prettyPrint)
 	}
 }
@@ -80,7 +96,11 @@ public extension BaseMappable {
 public extension Array where Element: BaseMappable {
 	
 	/// Initialize Array from a JSON String
+<<<<<<< HEAD
 	public init?(JSONString: String, context: MapContext? = nil) {
+=======
+	init?(JSONString: String, context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		if let obj: [Element] = Mapper(context: context).mapArray(JSONString: JSONString) {
 			self = obj
 		} else {
@@ -89,18 +109,30 @@ public extension Array where Element: BaseMappable {
 	}
 	
 	/// Initialize Array from a JSON Array
+<<<<<<< HEAD
 	public init(JSONArray: [[String: Any]], context: MapContext? = nil) {
+=======
+	init(JSONArray: [[String: Any]], context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		let obj: [Element] = Mapper(context: context).mapArray(JSONArray: JSONArray)
 		self = obj
 	}
 	
 	/// Returns the JSON Array
+<<<<<<< HEAD
 	public func toJSON() -> [[String: Any]] {
+=======
+	func toJSON() -> [[String: Any]] {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSONArray(self)
 	}
 	
 	/// Returns the JSON String for the object
+<<<<<<< HEAD
 	public func toJSONString(prettyPrint: Bool = false) -> String? {
+=======
+	func toJSONString(prettyPrint: Bool = false) -> String? {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSONString(self, prettyPrint: prettyPrint)
 	}
 }
@@ -108,7 +140,11 @@ public extension Array where Element: BaseMappable {
 public extension Set where Element: BaseMappable {
 	
 	/// Initializes a set from a JSON String
+<<<<<<< HEAD
 	public init?(JSONString: String, context: MapContext? = nil) {
+=======
+	init?(JSONString: String, context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		if let obj: Set<Element> = Mapper(context: context).mapSet(JSONString: JSONString) {
 			self = obj
 		} else {
@@ -117,7 +153,11 @@ public extension Set where Element: BaseMappable {
 	}
 	
 	/// Initializes a set from JSON
+<<<<<<< HEAD
 	public init?(JSONArray: [[String: Any]], context: MapContext? = nil) {
+=======
+	init?(JSONArray: [[String: Any]], context: MapContext? = nil) {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		guard let obj = Mapper(context: context).mapSet(JSONArray: JSONArray) as Set<Element>? else {
             return nil
         }
@@ -125,12 +165,20 @@ public extension Set where Element: BaseMappable {
 	}
 	
 	/// Returns the JSON Set
+<<<<<<< HEAD
 	public func toJSON() -> [[String: Any]] {
+=======
+	func toJSON() -> [[String: Any]] {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSONSet(self)
 	}
 	
 	/// Returns the JSON String for the object
+<<<<<<< HEAD
 	public func toJSONString(prettyPrint: Bool = false) -> String? {
+=======
+	func toJSONString(prettyPrint: Bool = false) -> String? {
+>>>>>>> 835328af26436bcb3c8a9a8dcf1f98aaef4d41e7
 		return Mapper().toJSONString(self, prettyPrint: prettyPrint)
 	}
 }

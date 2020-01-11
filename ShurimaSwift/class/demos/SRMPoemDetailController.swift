@@ -9,6 +9,9 @@
 import UIKit
 import Moya
 import ObjectMapper
+import SwiftyJSON
+import Alamofire
+import AlamofireObjectMapper
 
 
 enum MoyaApi {
@@ -27,14 +30,39 @@ class SRMPoemDetailController: UIViewController {
         view.backgroundColor = .white
         
 //        https://v2.jinrishici.com/one.json
-        let provider = MoyaProvider<MoyaApi>()
-        provider.request(MoyaApi.detail) { result in
-            if case let .success(response) = result {
-                let mapJson = try? response.mapJSON()
-                print(mapJson.)
-            }
+//        let provider = MoyaProvider<MoyaApi>()
+//        provider.request(MoyaApi.detail) { result in
+//            if case let .success(response) = result {
+//                let mapJson = try? response.mapJSON()
+//                print(mapJson.)
+//            }
+//        let url = "https://v2.jinrishici.com/one.json"
+        
+        
+        Alamofire.request(url).responseObject { (response: DataResponse<SRMPoem>) in
+            let poem = response.result.value;
+            print(poem?.cacheAt)
         }
-    }
+        
+        
+        
+        
+        
+        
+////        https://v2.jinrishici.com/one.json
+//        let provider = MoyaProvider<MoyaApi>()
+//        provider.request(MoyaApi.detail) { result in
+//            if case let .success(response) = result {
+////                let json = JSON(response.data)
+////                print(json)
+//                do {
+//                    let test = try JSONDecoder().decode(SRMPoem.self, from: response.data);
+//                    print(test.cacheAt)
+//                } catch let error {
+//
+//                }
+//            }
+//        }
 }
 
 
