@@ -31,3 +31,8 @@ struct SRMOrigin: Codable {
     var dynasty: String?
     var content: [String]?
 }
+
+struct SRMLunyu: Codable {
+    var chapter: String?
+    var paragraphs: [String]?
+}
