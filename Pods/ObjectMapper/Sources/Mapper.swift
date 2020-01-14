@@ -108,10 +108,7 @@ public final class Mapper<N: BaseMappable> {
 			}
 		} else if let klass = N.self as? ImmutableMappable.Type { // Check if object is ImmutableMappable
 			do {
-				if var object = try klass.init(map: map) as? N {
-					object.mapping(map: map)
-					return object
-				}
+				return try klass.init(map: map) as? N
 			} catch let error {
 				#if DEBUG
 				let exception: NSException
@@ -189,7 +186,7 @@ public final class Mapper<N: BaseMappable> {
 	public func mapDictionary(JSON: [String: [String: Any]]) -> [String: N]? {
 		// map every value in dictionary to type N
 		let result = JSON.filterMap(map)
-		if !result.isEmpty {
+		if result.isEmpty == false {
 			return result
 		}
 		
@@ -235,7 +232,7 @@ public final class Mapper<N: BaseMappable> {
 			mapArray(JSONArray: $0)
         }
         
-		if !result.isEmpty {
+		if result.isEmpty == false {
 			return result
 		}
         
@@ -245,11 +242,13 @@ public final class Mapper<N: BaseMappable> {
 	/// Maps an 2 dimentional array of JSON dictionaries to a 2 dimentional array of Mappable objects
 	public func mapArrayOfArrays(JSONObject: Any?) -> [[N]]? {
 		if let JSONArray = JSONObject as? [[[String: Any]]] {
-			let objectArray = JSONArray.map { innerJSONArray in
-				return mapArray(JSONArray: innerJSONArray)
+			var objectArray = [[N]]()
+			for innerJSONArray in JSONArray {
+				let array = mapArray(JSONArray: innerJSONArray)
+				objectArray.append(array)
 			}
 			
-			if !objectArray.isEmpty {
+			if objectArray.isEmpty == false {
 				return objectArray
 			}
 		}

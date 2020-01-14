@@ -1,11 +1,9 @@
 platform:ios,’8.0’
 use_frameworks!
+source 'http://github.com/CocoaPods/Specs.git'
 target 'ShurimaSwift' do
   pod 'Alamofire'
   pod 'Kingfisher'
-  pod 'SQLite.swift'
-  pod 'DGElasticPullToRefresh'
-  pod 'YYKit'
   pod 'SnapKit'
   pod 'Moya'
   pod 'ObjectMapper'

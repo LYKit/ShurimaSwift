@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Moya
+import ObjectMapper
 import SwiftyJSON
 import Alamofire
 import AlamofireObjectMapper
@@ -36,7 +38,6 @@ class SRMPoemDetailController: UIViewController {
             make.right.equalTo(view).offset(-20)
             make.bottom.equalTo(view).offset(-34)
         }
-        
                 
         let url = "https://v2.jinrishici.com/one.json"
         Alamofire.request(url).responseJSON { response in
@@ -47,6 +48,7 @@ class SRMPoemDetailController: UIViewController {
                 print(error)
             }
         }
+        
         
         
         

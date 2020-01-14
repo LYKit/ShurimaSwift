@@ -42,20 +42,24 @@ private func setValue(_ value: Any, key: String, checkForNestedKeys: Bool, delim
 }
 
 private func setValue(_ value: Any, forKeyPathComponents components: ArraySlice<String>, dictionary: inout [String : Any]) {
-	guard let head = components.first else {
+	if components.isEmpty {
 		return
 	}
 
-	let headAsString = String(head)
-	if components.count == 1 {
-		dictionary[headAsString] = value
-	} else {
-		var child = dictionary[headAsString] as? [String : Any] ?? [:]
-		
-		let tail = components.dropFirst()
-		setValue(value, forKeyPathComponents: tail, dictionary: &child)
+	let head = components.first!
 
-		dictionary[headAsString] = child
+	if components.count == 1 {
+		dictionary[String(head)] = value
+	} else {
+		var child = dictionary[String(head)] as? [String : Any]
+		if child == nil {
+			child = [:]
+		}
+
+		let tail = components.dropFirst()
+		setValue(value, forKeyPathComponents: tail, dictionary: &child!)
+
+		dictionary[String(head)] = child
 	}
 }
 

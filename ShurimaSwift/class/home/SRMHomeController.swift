@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import YYKit
 import SnapKit
 import Moya
 import Alamofire
