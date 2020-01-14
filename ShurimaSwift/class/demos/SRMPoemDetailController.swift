@@ -7,15 +7,10 @@
 //
 
 import UIKit
-import Moya
 import SwiftyJSON
 import Alamofire
 import AlamofireObjectMapper
-
-
-enum MoyaApi {
-    case detail //今日诗词详情
-}
+import SnapKit
 
 class SRMPoemDetailController: UIViewController {
     
@@ -26,61 +21,34 @@ class SRMPoemDetailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .white
+        let label = UILabel()
+        self.view.addSubview(label)
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.backgroundColor = .yellow
         
+        
+        label.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(20)
+            make.left.equalTo(view).offset(20)
+            make.right.equalTo(view).offset(-20)
+            make.bottom.equalTo(view).offset(-34)
+        }
+        
+                
         let url = "https://v2.jinrishici.com/one.json"
-        
-        
-        Alamofire.request(url).responseObject { (response: DataResponse<SRMPoem>) in
-            let poem = response.result.value;
-            print(poem?.cacheAt)
+        Alamofire.request(url).responseJSON { response in
+            do {
+                let poem = try JSONDecoder().decode(SRMPoem.self, from: response.data!)
+                label.text = poem.data?.origin?.content?.first
+            } catch let error {
+                print(error)
+            }
         }
         
         
         
-        
-        
-        
-////        https://v2.jinrishici.com/one.json
-//        let provider = MoyaProvider<MoyaApi>()
-//        provider.request(MoyaApi.detail) { result in
-//            if case let .success(response) = result {
-////                let json = JSON(response.data)
-////                print(json)
-//                do {
-//                    let test = try JSONDecoder().decode(SRMPoem.self, from: response.data);
-//                    print(test.cacheAt)
-//                } catch let error {
-//
-//                }
-//            }
-//        }
-    }
-}
-
-
-extension MoyaApi : TargetType {
-    var baseURL: URL {
-        return URL.init(string: "https://v2.jinrishici.com/one.json")!
-    }
-
-    var path: String {
-        return ""
-    }
-
-    var method: Moya.Method {
-        return .get
-    }
-
-    var sampleData: Data {
-        return Data(base64Encoded: "just for test")!
-    }
-
-    var task: Task {
-        return .requestParameters(parameters: ["" : ""], encoding: URLEncoding.default)
-    }
-
-    var headers: [String : String]? {
-        return ["Content-type" : "application/json"]
     }
 }

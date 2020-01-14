@@ -8,26 +8,26 @@
 
 import ObjectMapper
 
-class SRMPoem: Mappable {
-    var cacheAt: String?
-    var content: String?
+struct SRMPoem: Codable {
+    var status: String?
+    var data: SRMData?
+    var token: String?
+    var ipAddress: String?
+    var warning: String?
+}
+
+struct SRMData: Codable {
     var id: String?
+    var content: String?
+    var popularity: Int?
+    var origin: SRMOrigin?
     var matchTags: [String]?
-    var popularity:  Int?
     var recommendedReason: String?
-    
-    
-    required init?(map: Map) {
+    var cacheAt: String?
+}
 
-    }
-
-
-    func mapping(map: Map) {
-        cacheAt <- map["cacheAt"]
-        content <- map["content"]
-        id <- map["id"]
-        matchTags <- map["matchTags"]
-        popularity <- map["popularity"]
-        recommendedReason <- map["recommendedReason"]
-    }
+struct SRMOrigin: Codable {
+    var title: String?
+    var dynasty: String?
+    var content: [String]?
 }
